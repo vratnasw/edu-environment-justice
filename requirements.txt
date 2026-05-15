@@ -1,0 +1,16 @@
+pysal
+libpysal
+spreg
+geopandas
+shapely
+linearmodels
+statsmodels
+scipy
+numpy
+pandas
+pyarrow
+matplotlib
+seaborn
+contextily
+boto3
+pyyaml

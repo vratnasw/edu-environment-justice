@@ -1,0 +1,16 @@
+# config.yaml -- Environmental justice models — funding gap, pollution IV, TRI proximity. Models 18/24.
+
+r2:
+  bucket: edu-research-data
+  master_panel_key: processed/joined/master_panel.parquet
+
+training:
+  train_years: [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022]
+  val_years: [2023, 2024]
+
+data:
+  master_panel: processed/joined/master_panel.parquet
+  cal_enviroscreen: processed/canonical/cal_enviroscreen.parquet
+  epa_aqs: processed/canonical/epa_aqs.parquet
+  epa_tri: processed/canonical/epa_tri.parquet
+  schools_geojson: processed/geo/ca_schools.geojson
