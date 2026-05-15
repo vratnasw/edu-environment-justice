@@ -1,0 +1,9 @@
+{
+  "blocker": "no per-pupil-funding column found in master_panel.parquet. Searched: per_pupil_funding, per_pupil_expenditure, per_pupil_revenue, ppu_total, adjusted_per_pupil_revenue, total_expenditure_per_pupil. Add a per-pupil-funding column (e.g. CDE J-200 expenditure data) to the canonical layer and re-run.",
+  "ces_coef": null,
+  "ces_se": null,
+  "funding_gap_dollars_per_sd": null,
+  "n_districts": 0,
+  "model_type": "blocked",
+  "moran_i_residuals": null
+}

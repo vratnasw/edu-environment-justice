@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-05-15T19:14:17.004482+00:00",
+  "fast": false,
+  "funding_gap": {
+    "dollars_per_sd": -467.38014619673936,
+    "ces_coef": -62.2081993958476,
+    "ces_se": 9.693921923871827,
+    "model": "ols_cluster_fallback",
+    "n_districts": 60,
+    "moran_i_residuals": null,
+    "blocker": null
+  },
+  "pollution_iv": {
+    "math": {
+      "iv_coef_pp_per_ugm3": -0.666501166987473,
+      "iv_se": 0.19558686467564662,
+      "first_stage_f": 924.3184764854599,
+      "ols_bias_pct": -13.91416010182157,
+      "n": 180
+    },
+    "ela": {
+      "iv_coef_pp_per_ugm3": -0.33287813726165894,
+      "iv_se": 0.17325309127645228,
+      "first_stage_f": 924.3184764854599,
+      "ols_bias_pct": -2.030242441090422,
+      "n": 180
+    },
+    "instrument_used": "distance_weighted_fallback",
+    "original_spec_blocker": "NOAA wind direction not on R2"
+  },
+  "tri_proximity": {
+    "absent_coef": 0.5578427828219347,
+    "absent_se": 0.06900023381779882,
+    "absent_days_per_year_per_sd": 2.2181595029238905,
+    "suspend_coef": 0.040904479477798,
+    "suspend_se": 0.016131692728111713,
+    "suspension_pp_per_sd": 0.09036064427293335,
+    "prop_mediated_injury": 0.07626064771450204,
+    "mediator_col": "kd_health_injury_injury_hospitalization_rate_mean",
+    "absent_n": 180,
+    "suspend_n": 180
+  }
+}

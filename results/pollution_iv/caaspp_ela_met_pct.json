@@ -1,0 +1,26 @@
+{
+  "outcome": "caaspp_ela_met_pct",
+  "instrument_used": "distance_weighted_fallback",
+  "original_spec_blocker": "NOAA wind direction not on R2",
+  "instrument_construction": "calenviroscreen_pm25 (CARB tract-area-weighted PM2.5, vintage 2021) used as instrument for AQS county-year epa_pm25_annual_mean. Cross-sectional identification; year FE absorb panel-mean shifts.",
+  "n": 180,
+  "ols_coef_pp_per_ugm3": -0.32625438232576387,
+  "ols_se": 0.179950131729137,
+  "iv_coef_pp_per_ugm3": -0.33287813726165894,
+  "iv_se": 0.17325309127645228,
+  "iv_p_value": 0.054688826248790345,
+  "first_stage_f": 924.3184764854599,
+  "first_stage_coef_iv_on_pm25": 1.050765865060118,
+  "first_stage_se_iv_on_pm25": 0.03456170339181558,
+  "cragg_donald_wald_f": 1154.3233066809235,
+  "ols_iv_bias_pct": -2.030242441090422,
+  "controls": [
+    "log_enrollment",
+    "census_saipe_child_poverty_rate",
+    "pct_ell",
+    "pct_frl",
+    "yr_2019",
+    "yr_2020"
+  ],
+  "fast": false
+}
