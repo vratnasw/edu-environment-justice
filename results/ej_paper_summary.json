@@ -1,43 +1,43 @@
 {
-  "generated_at": "2026-05-15T19:14:17.004482+00:00",
-  "fast": false,
+  "generated_at": "2026-05-15T19:23:53.027732+00:00",
+  "fast": true,
   "funding_gap": {
-    "dollars_per_sd": -467.38014619673936,
-    "ces_coef": -62.2081993958476,
-    "ces_se": 9.693921923871827,
-    "model": "ols_cluster_fallback",
-    "n_districts": 60,
+    "dollars_per_sd": null,
+    "ces_coef": null,
+    "ces_se": null,
+    "model": "blocked",
+    "n_districts": 0,
     "moran_i_residuals": null,
-    "blocker": null
+    "blocker": "no per-pupil-funding column found in master_panel.parquet. Searched: per_pupil_funding, per_pupil_expenditure, per_pupil_revenue, ppu_total, adjusted_per_pupil_revenue, total_expenditure_per_pupil. Add a per-pupil-funding column (e.g. CDE J-200 expenditure data) to the canonical layer and re-run."
   },
   "pollution_iv": {
     "math": {
-      "iv_coef_pp_per_ugm3": -0.666501166987473,
-      "iv_se": 0.19558686467564662,
-      "first_stage_f": 924.3184764854599,
-      "ols_bias_pct": -13.91416010182157,
-      "n": 180
+      "iv_coef_pp_per_ugm3": 0.7294714601638419,
+      "iv_se": 0.3854270548552739,
+      "first_stage_f": 47.69298954998879,
+      "ols_bias_pct": -134.8944741114107,
+      "n": 1885
     },
     "ela": {
-      "iv_coef_pp_per_ugm3": -0.33287813726165894,
-      "iv_se": 0.17325309127645228,
-      "first_stage_f": 924.3184764854599,
-      "ols_bias_pct": -2.030242441090422,
-      "n": 180
+      "iv_coef_pp_per_ugm3": 0.42739060251147265,
+      "iv_se": 0.3694305564293634,
+      "first_stage_f": 47.74001902891323,
+      "ols_bias_pct": -1109.831439600482,
+      "n": 1895
     },
     "instrument_used": "distance_weighted_fallback",
     "original_spec_blocker": "NOAA wind direction not on R2"
   },
   "tri_proximity": {
-    "absent_coef": 0.5578427828219347,
-    "absent_se": 0.06900023381779882,
-    "absent_days_per_year_per_sd": 2.2181595029238905,
-    "suspend_coef": 0.040904479477798,
-    "suspend_se": 0.016131692728111713,
-    "suspension_pp_per_sd": 0.09036064427293335,
-    "prop_mediated_injury": 0.07626064771450204,
+    "absent_coef": 0.19439289970307644,
+    "absent_se": 0.11319067578222679,
+    "absent_days_per_year_per_sd": 1.4020942637715268,
+    "suspend_coef": -2.8109768353166054,
+    "suspend_se": 1.542918779891841,
+    "suspension_pp_per_sd": -10.95972916600719,
+    "prop_mediated_injury": -0.6746388639391484,
     "mediator_col": "kd_health_injury_injury_hospitalization_rate_mean",
-    "absent_n": 180,
-    "suspend_n": 180
+    "absent_n": 1999,
+    "suspend_n": 2314
   }
 }
